@@ -32,7 +32,7 @@ The following are the datasets that will be visible in the environment:
 ## The variables/objects/datasets that helped
 
 ### Listed in alphabetical order
-####Data
+#### Data
 - activity_labels: Data frame containing labels of activities for which measurements are recorded
 - DataSet_1: First Data frame merging **test** an **train** data
 - DataSet_2: Dataset required in the assignment
