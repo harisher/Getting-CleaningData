@@ -2,17 +2,15 @@
         library(dplyr)
 
         ## set working directory
-        ## setwd("C:/Users/SONY/Documents/R_files/Week4project/UCI HAR Dataset")        
+        ## setwd(<path_to_UCI HAR Dataset>)        
         
         ## remove existing file, if any
         if(file.exists("Tidy_Dataset.txt"))
                 file.remove("Tidy_Dataset.txt")
         
-        ## remove existing R objects and data
+        ## remove existing R objects
         obj <- ls(all = TRUE)
-        rm(obj, DataSet_1, DataSet_2)
-        
-        ############## Create first dataset ##################
+        rm(obj)
         
         ## read activity labels file
         activity_labels <- read.table("activity_labels.txt") 
@@ -70,22 +68,20 @@
         ## add activity labels as a column to the train data
         X_train <- cbind(Y_train[2],X_train)
         
-        ############### Combine Data sets ####################
+        ##### Combine Data sets to create initial dataset ####
+        
         ## Combine the test and train data
         HARData <- rbind(X_test, X_train)
         
-        ######################################################
-        ################### First Dataset ####################
-        
-	## Select columns with means and standard deviations from the resultng dataset 
+       	## Select columns with means and standard deviations from the resultng dataset 
         means <- grep("*[Mm]ean*",names(HARData))
         stds <- grep("*[Ss]td*",names(HARData))
                 
         ## Final Dataset with means and standard deviations 
         DataSet_1 <- HARData[,c(1,2,means,stds)]
         
-        ######################################################
-        ################## Second Dataset ####################
+        #####################################################
+        ################## Final Dataset ####################
         
         ## Group data by Activity and Subjects
         SubSet <- group_by(DataSet_1, Activity, SubjectNo)
