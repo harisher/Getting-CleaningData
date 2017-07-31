@@ -35,94 +35,96 @@ SubjectNo - this field in dataset is the ID of subjects. Values: 1 to 30
 WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 
 ## List of variables in the final dataset
-Activity                            
-SubjectNo                           
-tBodyAcc-mean()-X                    
-tBodyAcc-mean()-Y                   
-tBodyAcc-mean()-Z                    
-tGravityAcc-mean()-X                
-tGravityAcc-mean()-Y                 
-tGravityAcc-mean()-Z
-tBodyAccJerk-mean()-X
-tBodyAccJerk-mean()-Y               
-tBodyAccJerk-mean()-Z
-tBodyGyro-mean()-X                  
-tBodyGyro-mean()-Y                   
-tBodyGyro-mean()-Z                  
-tBodyGyroJerk-mean()-X
-tBodyGyroJerk-mean()-Y              
-tBodyGyroJerk-mean()-Z               
-tBodyAccMag-mean()                  
-tGravityAccMag-mean()
-tBodyAccJerkMag-mean()              
-tBodyGyroMag-mean()
-tBodyGyroJerkMag-mean()
-fBodyAcc-mean()-X
-fBodyAcc-mean()-Y                   
-fBodyAcc-mean()-Z
-fBodyAcc-meanFreq()-X               
-fBodyAcc-meanFreq()-Y
-fBodyAcc-meanFreq()-Z               
-fBodyAccJerk-mean()-X                
-fBodyAccJerk-mean()-Y               
-fBodyAccJerk-mean()-Z
-fBodyAccJerk-meanFreq()-X           
-fBodyAccJerk-meanFreq()-Y
-fBodyAccJerk-meanFreq()-Z           
-fBodyGyro-mean()-X
-fBodyGyro-mean()-Y                  
-fBodyGyro-mean()-Z
-fBodyGyro-meanFreq()-X              
-fBodyGyro-meanFreq()-Y
-fBodyGyro-meanFreq()-Z              
-fBodyAccMag-mean()
-fBodyAccMag-meanFreq()              
-fBodyBodyAccJerkMag-mean()
-fBodyBodyAccJerkMag-meanFreq()      
-fBodyBodyGyroMag-mean()
-fBodyBodyGyroMag-meanFreq()         
-fBodyBodyGyroJerkMag-mean()
-fBodyBodyGyroJerkMag-meanFreq()     
-angle(tBodyAccMean,gravity)          
-angle(tBodyAccJerkMean),gravityMean)
-angle(tBodyGyroMean,gravityMean)
-angle(tBodyGyroJerkMean,gravityMean)
-angle(X,gravityMean)
-angle(Y,gravityMean)                
-angle(Z,gravityMean)
-tBodyAcc-std()-X                    
-tBodyAcc-std()-Y
-tBodyAcc-std()-Z                    
-tGravityAcc-std()-X
-tGravityAcc-std()-Y                 
-tGravityAcc-std()-Z
-tBodyAccJerk-std()-X                
-tBodyAccJerk-std()-Y
-tBodyAccJerk-std()-Z                
-tBodyGyro-std()-X                    
-tBodyGyro-std()-Y                   
-tBodyGyro-std()-Z
-tBodyGyroJerk-std()-X               
-tBodyGyroJerk-std()-Y
-tBodyGyroJerk-std()-Z               
-tBodyAccMag-std()
-tGravityAccMag-std()                
-tBodyAccJerkMag-std()
-tBodyGyroMag-std()                  
-tBodyGyroJerkMag-std()
-fBodyAcc-std()-X                    
-fBodyAcc-std()-Y
-fBodyAcc-std()-Z                    
-fBodyAccJerk-std()-X
-fBodyAccJerk-std()-Y                
-fBodyAccJerk-std()-Z
-fBodyGyro-std()-X                   
-fBodyGyro-std()-Y
-fBodyGyro-std()-Z                   
-fBodyAccMag-std()
-fBodyBodyAccJerkMag-std()           
-fBodyBodyGyroMag-std()
-fBodyBodyGyroJerkMag-std()
+
+###VARIABLE {UNITS in Brackets}
+Activity {NA, Character}        
+SubjectNo {NA, ID}
+tBodyAcc-mean()-X {g}
+tBodyAcc-mean()-Y {g}
+tBodyAcc-mean()-Z {g}                   
+tGravityAcc-mean()-X {g}                
+tGravityAcc-mean()-Y {g}                
+tGravityAcc-mean()-Z {g}
+tBodyAccJerk-mean()-X {g}
+tBodyAccJerk-mean()-Y {g}              
+tBodyAccJerk-mean()-Z {g}
+tBodyGyro-mean()-X {radian/second}                 
+tBodyGyro-mean()-Y {radian/second}                  
+tBodyGyro-mean()-Z {radian/second}                 
+tBodyGyroJerk-mean()-X {radian/second}
+tBodyGyroJerk-mean()-Y {radian/second}             
+tBodyGyroJerk-mean()-Z {radian/second}              
+tBodyAccMag-mean() {g}                 
+tGravityAccMag-mean() {g}
+tBodyAccJerkMag-mean() {g}             
+tBodyGyroMag-mean() {radian/second}
+tBodyGyroJerkMag-mean() {radian/second}
+fBodyAcc-mean()-X {g}
+fBodyAcc-mean()-Y {g}                  
+fBodyAcc-mean()-Z {g}
+fBodyAcc-meanFreq()-X {g}               
+fBodyAcc-meanFreq()-Y {g}
+fBodyAcc-meanFreq()-Z {g}              
+fBodyAccJerk-mean()-X {g}               
+fBodyAccJerk-mean()-Y {g}              
+fBodyAccJerk-mean()-Z {g}
+fBodyAccJerk-meanFreq()-X {g}          
+fBodyAccJerk-meanFreq()-Y {g}
+fBodyAccJerk-meanFreq()-Z {g}          
+fBodyGyro-mean()-X {radian/second}
+fBodyGyro-mean()-Y {radian/second}                 
+fBodyGyro-mean()-Z {radian/second}
+fBodyGyro-meanFreq()-X {radian/second}              
+fBodyGyro-meanFreq()-Y {radian/second}
+fBodyGyro-meanFreq()-Z {radian/second}             
+fBodyAccMag-mean() {g}
+fBodyAccMag-meanFreq() {g}              
+fBodyBodyAccJerkMag-mean() {g}
+fBodyBodyAccJerkMag-meanFreq() {g}      
+fBodyBodyGyroMag-mean() {radian/second}
+fBodyBodyGyroMag-meanFreq() {radian/second}        
+fBodyBodyGyroJerkMag-mean() {radian/second}
+fBodyBodyGyroJerkMag-meanFreq() {radian/second}     
+angle(tBodyAccMean,gravity) {radian}         
+angle(tBodyAccJerkMean),gravityMean) {radian}
+angle(tBodyGyroMean,gravityMean) {radian}
+angle(tBodyGyroJerkMean,gravityMean) {radian}
+angle(X,gravityMean) {radian}
+angle(Y,gravityMean) {radian}             
+angle(Z,gravityMean) {radian}
+tBodyAcc-std()-X {g}                   
+tBodyAcc-std()-Y {g}
+tBodyAcc-std()-Z {g}                   
+tGravityAcc-std()-X {g}
+tGravityAcc-std()-Y {g}                
+tGravityAcc-std()-Z {g}
+tBodyAccJerk-std()-X {g}              
+tBodyAccJerk-std()-Y {g}
+tBodyAccJerk-std()-Z {g}               
+tBodyGyro-std()-X {radian/second}                   
+tBodyGyro-std()-Y {radian/second}                 
+tBodyGyro-std()-Z {radian/second}
+tBodyGyroJerk-std()-X {radian/second}              
+tBodyGyroJerk-std()-Y {radian/second}
+tBodyGyroJerk-std()-Z {radian/second}              
+tBodyAccMag-std() {g}
+tGravityAccMag-std() {g}                
+tBodyAccJerkMag-std() {g}
+tBodyGyroMag-std() {radian/second}                 
+tBodyGyroJerkMag-std() {radian/second}
+fBodyAcc-std()-X {g}                    
+fBodyAcc-std()-Y {g}
+fBodyAcc-std()-Z {g}                   
+fBodyAccJerk-std()-X {g}
+fBodyAccJerk-std()-Y {g}               
+fBodyAccJerk-std()-Z {g}
+fBodyGyro-std()-X {radian/second}                  
+fBodyGyro-std()-Y {radian/second}
+fBodyGyro-std()-Z {radian/second}                  
+fBodyAccMag-std() {g}
+fBodyBodyAccJerkMag-std() {g}          
+fBodyBodyGyroMag-std() {radian/second}
+fBodyBodyGyroJerkMag-std() {radian/second}
 
 ## The variables/objects/datasets that helped
 
