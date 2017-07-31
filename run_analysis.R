@@ -17,6 +17,12 @@
         
         ## read features file
         features <- read.table("features.txt")
+        features$V2 <- gsub("\\(","",features$V2)
+        features$V2 <- gsub("\\)","",features$V2)
+        features$V2 <- gsub(",","",features$V2)
+        features$V2 <- gsub("-","",features$V2)
+        features$V2 <- tolower(features$V2)
+        
         
         ################### test data ########################
         
@@ -88,7 +94,7 @@
         
         ## Create second, tidy dataset wih averages for each activity and each subject
         DataSet_2 <- SubSet %>% 
-                   summarise_at(vars(`tBodyAcc-mean()-X`:`fBodyBodyGyroJerkMag-std()`),
+                   summarise_at(vars(`tbodyaccmeanx`:`fbodybodygyrojerkmagstd`),
                                 mean, na.rm = TRUE)
         
         ## write dataset to text file
