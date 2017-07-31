@@ -135,8 +135,7 @@ The follwing variables are considered for analysis.
 87. fBodyBodyGyroMag-std() {radian/second}
 88. fBodyBodyGyroJerkMag-std() {radian/second}
 
-#### **Note: The names are cleaned by removing the special characters and changing the case of letters to lower case beforing using them as column names.
-The names presented here are in their original form for better legibility.**
+#### **Note: The names are cleaned by removing the special characters and changing the case of letters to lower case beforing using them as column names. The names presented here are in their original form for better legibility.**
 
 ## The variables/objects/datasets used in the analysis
 
