@@ -45,7 +45,7 @@ The list of activities for which the measurements are recorded are:
 
 The follwing variables are considered for analysis. 
  
-###VARIABLE {UNITS in Brackets}
+### VARIABLE {UNITS in Brackets}
 1. activity {Not Applicable, Character}        
 2. subject {Not Applicable, ID}
 3. tBodyAcc-mean()-X {g}
