@@ -148,10 +148,6 @@ WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 - means: integer vector containing indices of columns with *mean* values
 - stds: integer vector containing indices of columns with *standard deviation* values
 
-## Units for the measurements
-- Acceleration values are measured in 'g'
-- Angular velocity values are measured in 'radian/second'
-
 ## Transformations performed
 The data is not transformed. The average values of all the variables is calculated for each activity and each subject using the following code:
 
