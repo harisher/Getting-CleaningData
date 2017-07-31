@@ -37,94 +37,94 @@ WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 ## List of variables in the final dataset
 
 ###VARIABLE {UNITS in Brackets}
-Activity {NA, Character}        
-SubjectNo {NA, ID}
-tBodyAcc-mean()-X {g}
-tBodyAcc-mean()-Y {g}
-tBodyAcc-mean()-Z {g}                   
-tGravityAcc-mean()-X {g}                
-tGravityAcc-mean()-Y {g}                
-tGravityAcc-mean()-Z {g}
-tBodyAccJerk-mean()-X {g}
-tBodyAccJerk-mean()-Y {g}              
-tBodyAccJerk-mean()-Z {g}
-tBodyGyro-mean()-X {radian/second}                 
-tBodyGyro-mean()-Y {radian/second}                  
-tBodyGyro-mean()-Z {radian/second}                 
-tBodyGyroJerk-mean()-X {radian/second}
-tBodyGyroJerk-mean()-Y {radian/second}             
-tBodyGyroJerk-mean()-Z {radian/second}              
-tBodyAccMag-mean() {g}                 
-tGravityAccMag-mean() {g}
-tBodyAccJerkMag-mean() {g}             
-tBodyGyroMag-mean() {radian/second}
-tBodyGyroJerkMag-mean() {radian/second}
-fBodyAcc-mean()-X {g}
-fBodyAcc-mean()-Y {g}                  
-fBodyAcc-mean()-Z {g}
-fBodyAcc-meanFreq()-X {g}               
-fBodyAcc-meanFreq()-Y {g}
-fBodyAcc-meanFreq()-Z {g}              
-fBodyAccJerk-mean()-X {g}               
-fBodyAccJerk-mean()-Y {g}              
-fBodyAccJerk-mean()-Z {g}
-fBodyAccJerk-meanFreq()-X {g}          
-fBodyAccJerk-meanFreq()-Y {g}
-fBodyAccJerk-meanFreq()-Z {g}          
-fBodyGyro-mean()-X {radian/second}
-fBodyGyro-mean()-Y {radian/second}                 
-fBodyGyro-mean()-Z {radian/second}
-fBodyGyro-meanFreq()-X {radian/second}              
-fBodyGyro-meanFreq()-Y {radian/second}
-fBodyGyro-meanFreq()-Z {radian/second}             
-fBodyAccMag-mean() {g}
-fBodyAccMag-meanFreq() {g}              
-fBodyBodyAccJerkMag-mean() {g}
-fBodyBodyAccJerkMag-meanFreq() {g}      
-fBodyBodyGyroMag-mean() {radian/second}
-fBodyBodyGyroMag-meanFreq() {radian/second}        
-fBodyBodyGyroJerkMag-mean() {radian/second}
-fBodyBodyGyroJerkMag-meanFreq() {radian/second}     
-angle(tBodyAccMean,gravity) {radian}         
-angle(tBodyAccJerkMean),gravityMean) {radian}
-angle(tBodyGyroMean,gravityMean) {radian}
-angle(tBodyGyroJerkMean,gravityMean) {radian}
-angle(X,gravityMean) {radian}
-angle(Y,gravityMean) {radian}             
-angle(Z,gravityMean) {radian}
-tBodyAcc-std()-X {g}                   
-tBodyAcc-std()-Y {g}
-tBodyAcc-std()-Z {g}                   
-tGravityAcc-std()-X {g}
-tGravityAcc-std()-Y {g}                
-tGravityAcc-std()-Z {g}
-tBodyAccJerk-std()-X {g}              
-tBodyAccJerk-std()-Y {g}
-tBodyAccJerk-std()-Z {g}               
-tBodyGyro-std()-X {radian/second}                   
-tBodyGyro-std()-Y {radian/second}                 
-tBodyGyro-std()-Z {radian/second}
-tBodyGyroJerk-std()-X {radian/second}              
-tBodyGyroJerk-std()-Y {radian/second}
-tBodyGyroJerk-std()-Z {radian/second}              
-tBodyAccMag-std() {g}
-tGravityAccMag-std() {g}                
-tBodyAccJerkMag-std() {g}
-tBodyGyroMag-std() {radian/second}                 
-tBodyGyroJerkMag-std() {radian/second}
-fBodyAcc-std()-X {g}                    
-fBodyAcc-std()-Y {g}
-fBodyAcc-std()-Z {g}                   
-fBodyAccJerk-std()-X {g}
-fBodyAccJerk-std()-Y {g}               
-fBodyAccJerk-std()-Z {g}
-fBodyGyro-std()-X {radian/second}                  
-fBodyGyro-std()-Y {radian/second}
-fBodyGyro-std()-Z {radian/second}                  
-fBodyAccMag-std() {g}
-fBodyBodyAccJerkMag-std() {g}          
-fBodyBodyGyroMag-std() {radian/second}
-fBodyBodyGyroJerkMag-std() {radian/second}
+1. Activity {NA, Character}        
+2. SubjectNo {NA, ID}
+3. tBodyAcc-mean()-X {g}
+4. tBodyAcc-mean()-Y {g}
+5. tBodyAcc-mean()-Z {g}                   
+6. tGravityAcc-mean()-X {g}                
+7. tGravityAcc-mean()-Y {g}                
+8. tGravityAcc-mean()-Z {g}
+9. tBodyAccJerk-mean()-X {g}
+10. tBodyAccJerk-mean()-Y {g}              
+11. tBodyAccJerk-mean()-Z {g}
+12. tBodyGyro-mean()-X {radian/second}                 
+13. tBodyGyro-mean()-Y {radian/second}                  
+14. tBodyGyro-mean()-Z {radian/second}                 
+15. tBodyGyroJerk-mean()-X {radian/second}
+16. tBodyGyroJerk-mean()-Y {radian/second}             
+17. tBodyGyroJerk-mean()-Z {radian/second}              
+18. tBodyAccMag-mean() {g}                 
+19. tGravityAccMag-mean() {g}
+20. tBodyAccJerkMag-mean() {g}             
+21. tBodyGyroMag-mean() {radian/second}
+22. tBodyGyroJerkMag-mean() {radian/second}
+23. fBodyAcc-mean()-X {g}
+24. fBodyAcc-mean()-Y {g}                  
+25. fBodyAcc-mean()-Z {g}
+26. fBodyAcc-meanFreq()-X {g}               
+27. fBodyAcc-meanFreq()-Y {g}
+28. fBodyAcc-meanFreq()-Z {g}              
+29. fBodyAccJerk-mean()-X {g}               
+30. fBodyAccJerk-mean()-Y {g}              
+31. fBodyAccJerk-mean()-Z {g}
+32. fBodyAccJerk-meanFreq()-X {g}          
+33. fBodyAccJerk-meanFreq()-Y {g}
+34. fBodyAccJerk-meanFreq()-Z {g}          
+35. fBodyGyro-mean()-X {radian/second}
+36. fBodyGyro-mean()-Y {radian/second}                 
+37. fBodyGyro-mean()-Z {radian/second}
+38. fBodyGyro-meanFreq()-X {radian/second}              
+39. fBodyGyro-meanFreq()-Y {radian/second}
+40. fBodyGyro-meanFreq()-Z {radian/second}             
+41. fBodyAccMag-mean() {g}
+42. fBodyAccMag-meanFreq() {g}              
+43. fBodyBodyAccJerkMag-mean() {g}
+44. fBodyBodyAccJerkMag-meanFreq() {g}      
+45. fBodyBodyGyroMag-mean() {radian/second}
+46. fBodyBodyGyroMag-meanFreq() {radian/second}        
+47. fBodyBodyGyroJerkMag-mean() {radian/second}
+48. fBodyBodyGyroJerkMag-meanFreq() {radian/second}     
+49. angle(tBodyAccMean,gravity) {radian}         
+50. angle(tBodyAccJerkMean),gravityMean) {radian}
+51. angle(tBodyGyroMean,gravityMean) {radian}
+52. angle(tBodyGyroJerkMean,gravityMean) {radian}
+53. angle(X,gravityMean) {radian}
+54. angle(Y,gravityMean) {radian}             
+55. angle(Z,gravityMean) {radian}
+56. tBodyAcc-std()-X {g}                   
+57. tBodyAcc-std()-Y {g}
+58. tBodyAcc-std()-Z {g}                   
+59. tGravityAcc-std()-X {g}
+60. tGravityAcc-std()-Y {g}                
+61. tGravityAcc-std()-Z {g}
+62. tBodyAccJerk-std()-X {g}              
+63. tBodyAccJerk-std()-Y {g}
+64. tBodyAccJerk-std()-Z {g}               
+65. tBodyGyro-std()-X {radian/second}                   
+66. tBodyGyro-std()-Y {radian/second}                 
+67. tBodyGyro-std()-Z {radian/second}
+68. tBodyGyroJerk-std()-X {radian/second}              
+69. tBodyGyroJerk-std()-Y {radian/second}
+70. tBodyGyroJerk-std()-Z {radian/second}              
+71. tBodyAccMag-std() {g}
+72. tGravityAccMag-std() {g}                
+73. tBodyAccJerkMag-std() {g}
+74. tBodyGyroMag-std() {radian/second}                 
+75. tBodyGyroJerkMag-std() {radian/second}
+76. fBodyAcc-std()-X {g}                    
+77. fBodyAcc-std()-Y {g}
+78. fBodyAcc-std()-Z {g}                   
+79. fBodyAccJerk-std()-X {g}
+80. fBodyAccJerk-std()-Y {g}               
+81. fBodyAccJerk-std()-Z {g}
+82. fBodyGyro-std()-X {radian/second}                  
+83. fBodyGyro-std()-Y {radian/second}
+84. fBodyGyro-std()-Z {radian/second}                  
+85. fBodyAccMag-std() {g}
+86. fBodyBodyAccJerkMag-std() {g}          
+87. fBodyBodyGyroMag-std() {radian/second}
+88. fBodyBodyGyroJerkMag-std() {radian/second}
 
 ## The variables/objects/datasets that helped
 
