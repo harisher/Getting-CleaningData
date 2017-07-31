@@ -1,5 +1,4 @@
 # README
-This project is done as part of **Coursera's Getting and Cleaning Data** course. The script file reads the **test** and **train** datasets, renames columns with appropriate variable names, adds two columns - Activity and SubjectNo, merges the two data sets, and retains columns that are either mean or standard deviation values. Finally, the script groups the observations by activity and subject, and calculates the average values of variables 
 
 ## How to execute the script "run_analysis.R"
 
@@ -26,22 +25,22 @@ This project is done as part of **Coursera's Getting and Cleaning Data** course.
 
 #### Loading the data for TEST
 - Save the list of subjects for test in **subjects_test** vector
-- Rename the column name in **subjects_test** to *SubjectNo*
+- Rename the column name in **subjects_test** to *subject*
 - Save the data in X_test to **X_test** list
 - Rename the column names in **X_test** with the values from **features**
 - Combine **subjects_test** with **X_test**
 - Save the Y_test data to **Y_test**
-- Add a column *Activity* to label the activities in **Y_test**
+- Add a column *activity* to label the activities in **Y_test**
 - Add the activity labels data in **Y_test** to **X_test**
 
 #### Loading the data for TRAIN
 - Save the list of subjects for train in **subjects_train** vector
-- Rename the column name in **subjects_train** to *SubjectNo*
+- Rename the column name in **subjects_train** to *subject*
 - Save the data in X_train to **X_train** list
 - Rename the column names in **X_train** with the values from **features**
 - Combine **subjects_train** with **X_train**
 - Save the Y_train data to **Y_train**
-- Add a column *Activity* to label the activities in **Y_train**
+- Add a column *activity* to label the activities in **Y_train**
 - Add the activity labels data in **Y_train** to **X_train**
 
 #### Combining the TEST and TRAIN data
@@ -52,7 +51,7 @@ This project is done as part of **Coursera's Getting and Cleaning Data** course.
 - Create the final dataset **DataSet_1** by choosing columns names having values in **means** and **stds**.
 
 ### Creating the final dataset
-- Group the first dataset by **Activity** and **SubjectNo** and save it to **SubSet**
+- Group the first dataset by **activity** and **subject** and save it to **SubSet**
 - Calculate the average value of the measures for each activity and each subject by applying the *summarise_at* function on the **SubSet** and save the result to **DataSet_2**. This is the second Dataset required in the assignment
 
 ### Writing the dataset to file

@@ -28,7 +28,7 @@
         
         ## read subjects in test file 
         subjects_test <- read.table("./test/subject_test.txt")
-        colnames(subjects_test) <- "SubjectNo"
+        colnames(subjects_test) <- "subject"
         
         ## read the test measures file
         X_test <- read.table("./test/X_test.txt")
@@ -44,7 +44,7 @@
         
         ## add labels for the activities
         for(i in 1:nrow(Y_test))
-                Y_test[i,"Activity"] <- activity_labels[Y_test[i,1],2]
+                Y_test[i,"activity"] <- activity_labels[Y_test[i,1],2]
         
         ## add activity labels as a column to the test data       
         X_test <- cbind(Y_test[2],X_test)
@@ -53,7 +53,7 @@
         
         ## read subjects in train file
         subjects_train <- read.table("./train/subject_train.txt")
-        colnames(subjects_train) <- "SubjectNo"
+        colnames(subjects_train) <- "subject"
         
         ## read the train measures file
         X_train <- read.table("./train/X_train.txt")
@@ -69,7 +69,7 @@
         
         ## add labels for activities
         for(i in 1:nrow(Y_train))
-                Y_train[i,"Activity"] <- activity_labels[Y_train[i,1],2]
+                Y_train[i,"activity"] <- activity_labels[Y_train[i,1],2]
         
         ## add activity labels as a column to the train data
         X_train <- cbind(Y_train[2],X_train)
@@ -90,7 +90,7 @@
         ################## Final Dataset ####################
         
         ## Group data by Activity and Subjects
-        SubSet <- group_by(DataSet_1, Activity, SubjectNo)
+        SubSet <- group_by(DataSet_1, activity, subject)
         
         ## Create second, tidy dataset wih averages for each activity and each subject
         DataSet_2 <- SubSet %>% 
