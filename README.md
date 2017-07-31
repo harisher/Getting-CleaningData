@@ -1,5 +1,5 @@
 # README
-This project is done as part of **Coursera's Getting and Cleaning Data** course. The script file reads the **test** and **train** datasets, adds variable names to the columns, adds two columns - Activitiy and SubjectNo, merges the two data sets - **test** and **train** datasets, and retains columns that are either mean or standard deviation values. Finally, the script groups the observations by activity and subject, and calculates the average values of the variables 
+This project is done as part of **Coursera's Getting and Cleaning Data** course. The script file reads the **test** and **train** datasets, renames columns with appropriate variable names, adds two columns - Activity and SubjectNo, merges the two data sets, and retains columns that are either mean or standard deviation values. Finally, the script groups the observations by activity and subject, and calculates the average values of variables 
 
 ## How to execute the script "run_analysis.R"
 
